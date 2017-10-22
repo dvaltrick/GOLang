@@ -2,7 +2,7 @@
 
 # Instruções
 * Clonar o repositório para o diretório C:/Go/src ou para dentro da instalação padrão do Go
-* O arquivo novo.csv contém os dados para inicializar a base de dados e deve estar no diretório raiz
+* O arquivo novo.csv contém os dados para inicializar a base de dados e deve estar no diretório raiz, quando executada pela primeira vez a aplicação verifica se a base já possui dados caso contrário importa as informações do arquivo novo.csv 
 * Para o correto funcionamento do postgres deve ser criado um banco de dados e executado o script contido no arquivo dml.sql
 * No arquivo github.com/teste/services/database.go devem ser alteradas as constantes de acesso ao postgre
 
