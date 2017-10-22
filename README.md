@@ -2,6 +2,16 @@
 
 # Instruções
 * Clonar o repositório para o diretório C:/Go/src ou para dentro da instalação padrão do Go
+* O arquivo novo.csv contém os dados para inicializar a base de dados e deve estar no diretório raiz
+* Para o correto funcionamento do postgres deve ser criado um banco de dados e executado o script contido no arquivo dml.sql
+* No arquivo github.com/teste/services/database.go devem ser alteradas as constantes de acesso ao postgre
+
+const (
+	dbuser = "usuário do banco de dados"
+	dbpwd = "senha do banco de dados"
+	dbname = "nome do banco de dados" 
+)
+
 * Da pasta src executar o comando *go run github.com/teste/main/main.go*; 
   Esse comando irá inicializar o serviço no endereço http://localhost:12345;
 * Para testar a aplicação utilize o programa Postman ou similar para testar apis
